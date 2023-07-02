@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>AppdeManwhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/imagen/image.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>click here to view more <a href="#">cat photos</a>.</p>
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="un lindo gato naranja recostado sobre su espalda">
+      </section>
+
+      <section>
+        <h2>Cat list</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure >
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+        </figure>
+        <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+              <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label for="indoor">
+                  <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor
+                </label>
+                <label for="outdoor">
+                  <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+                </label>
+            </fieldset>
+            <fieldset>
+              <legend>What's your cat's personality?</legend>
+                <input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving" checked>Loving</label>
+                <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">lazy</label>
+                <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+            </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button type="submit">submit</button>
+        </form>
+      </section>
+      <h3><em>imagenes de gatos</em></h3>
+      <!-- TODO; Agregar imagenes de gatos-->
+      <div class="container">
+        <p>
+          <a href="#" target="_blank" rel="noopener noreferrer">click para ver mas maenes de gatos</a>
+        </p>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://bit.ly/fcc-relaxing-cat" class="gato" alt="un lindo gato naranja recostado sobre su espalda">
+          </a>
+      </div>
+      
+      <hr>
+
+      <!--definimos el uso de lo aprendidp-->
+      <h2><em>Manhwa Recomendado</em></h2>
+      <h3><mark>Generos de la historia</mark></h3>
+      <ul>
+        <li>Accion</li>
+        <li><u>Aventura</u></li>
+        <li>Comedia</li>
+        <li>Fantasia</li>
+        <li>Reencarnacion</li>
+        <li>Ciencia ficcion</li>
+        <li><s>Sobrenatural</s></li>
+      </ul>
+      <a href="https://lectortmo.com/library/manhwa/93/her-summon" target="_blank" rel="noopener noreferrer">
+        <img src="imagen/example-image.jpg" id="image" alt="her summond">
+      </a>
+
+      <p id="title2"><strong>Te gusto la serie:</strong></p>
+      <form action="/envair respuesta">
+        <label for="si">
+          <input id="si" value="si" name="si-no" type="radio" checked> si
+        </label>
+        <br>
+        <label for="no">
+          <input id="no" value="no" name="si-no" type="checkbox"> no
+        </label>
+        <br>
+      </form>
+
+
+      <hr>
+
+      <h3>Listas de gatos</h3>
+
+      <div>
+        <p>cosas que los gatos <em>aman</em>:</p>
+        <ul id="list">
+          <li>Menta gatuna</li>
+          <li>Apuntadores laser</li>
+          <li><s>lasaña</s></li>
+        </ul>
+        <img src="imagen/site-extensive.jpg" class="radius" alt="un fondo elegante de escritorio">
+
+        <hr>
+
+        <p>cosas que los gatos <strong>odian</strong>:</p>
+        <ol id="list2">
+          <li>Tartamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>otros gtaos</li>
+        </ol>
+      </div>
+      <img src="imagen/karakuri-circus.jpg" alt="Una imaegen de mi anime favorito"><br>
+
+      <form action="/enviar respuesta">
+        <!--Botones de radio-->
+        <fieldset>
+          <legend>tu gato es de interior o exterior</legend>
+          <label for="interior">
+            <input id="interior" value="interior" name="interior-exterior" type="radio" checked> interior
+          </label>
+          <br>
+          <label for="exterior">
+            <input id="exterior" value="exterior" name="interior-exterior" type="radio"> exterior
+          </label>
+        </fieldset>
+        <br>
+
+        <!--casillas de verificacion-->
+        <fieldset>
+          <legend>Que tipo de gato es</legend>
+          <label for="carinoso">
+            <input id="carinoso" value="carinoso" name="personalidad" type="checkbox" checked> Cariñoso
+          </label>
+          <br>
+          <label for="energico">
+            <input id="energico" value="energico" name="personalidad" type="checkbox" > Energico
+          </label>
+          <br>
+          <label for="peresozo">
+            <input id="peresozo" value="peresozo" name="personalidad" type="checkbox" > Peresozo
+          </label>
+          <br>
+        </fieldset>
+          
+        <hr>
+         
+        <!--Tecto & boton de enviar-->
+        <input type="text" placeholder="url de la foto de tu gato" required><br>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section>
+        <hr>
+        <div class="texto">
+          <h1 id="title" class="text-blue" style="color: purple;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur deserunt voluptatem quisquam molestias iste reiciendis maxime sint eos praesentium. Vero assumenda fugit hic aliquid repellendus sunt, voluptatibus aut provident.</h1>
+          <a href="#" id="main" class="non-text">click para mas diversion</a>
+        </div>
+        <div id="buton">
+          <button href="#">God!</button>
+        </div>
+      </section>  
+    </main>
+    <footer>
+      <p><small>Todos los derecos reservados a sus  
+        <a href="#" target="_blank" rel="noopener noreferrer">autores &copy</a>
+      </small></p> 
+    </footer>
+  </body>
+</html>

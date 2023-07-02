@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Proyect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images-project/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <div class="head" id="first">
+    <header>
+      <h1 id="title" class="text-center">My Survey Form</h1>
+      <p id="description" class="text-description">Thank you for taking the time to help solve this survey.</p>
+    </header>
+  </div> 
+  <div class="container">
+      <form action="" id="survey-form">
+        <div class="datos">
+          <label for="name" id="name-label">Name <input type="text" id="name"  placeholder="Enter your name" required></label>
+          <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+          <label for="number" id="number-label">Age(optional) <input type="number" min="11" max="99" id="number" placeholder="Age"></label>
+        </div>
+
+        <div class="option">
+          <label for="list" id="list">Which option best describes your current role?</label>
+            <select id="dropdown" name="role" class="form-control" required="">
+              <option disabled="" selected="" value="" id="text-disaible">Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="radio">
+          <label class="list-radio" for="definitely">Would you recommend freeCodeCamp to a friend?</label> 
+            <input id="definitely" value="definitely" name="recomendation" type="radio"> Definitely
+          <label class="list-radio" for="maybe"></label> 
+            <input id="maybe" value="maybe" name="recomendation" type="radio"> Maybe 
+          <label class="list-radio" for="not-sure"></label>
+            <input id="not-sure" value="not-sure" name="recomendation" type="radio"> Not sure 
+        </div>
+        <div class="option">
+          <label for="second-dropdown">What is your favorite feature of freeCodeCamp?</label> 
+            <select name="List2" id="second-dropdown" class="form-control" required="">
+              <option disabled="" selected="" value="" id="text-disaible2">Select an option</option>
+              <option value="1">Callenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Open Source</option>
+            </select>
+        </div>
+        <div class="checklist">
+          <label class="parragraf">What would you like to see improved? (Check all that apply)</label>
+            <label for="front-end" class="list-checkbox"></label>
+              <input value="front-end" type="checkbox" name="option1" id="front-end"> Front-end Projects
+            <label for="back-end" class="list-checkbox"></label>
+              <input value="back-end" type="checkbox" name="option2" id="back-end"> Back-end Projects
+            <label for="data-visualization" class="list-checkbox"></label>
+              <input value="data-visualization" type="checkbox" name="option3" id="data-visualization"> Data Visualization
+            <label for="challenges" class="list-checkbox"></label>  
+              <input value="challenges" type="checkbox" name="option4" id="challenges"> Challenges
+            <label for="open-source" class="list-checkbox"></label>   
+              <input value="open-source" type="checkbox" name="option5" id="open-source"> Open Source Community
+            <label for="gitter" class="list-checkbox"></label> 
+              <input value="gitter" type="checkbox" name="option6" id="gitter"> Gitter help rooms
+            <label for="videos" class="list-checkbox"></label> 
+              <input value="videos" type="checkbox" name="option7" id="videos"> Videos
+            <label for="city" class="list-checkbox"></label>
+              <input value="city" type="checkbox" name="option8" id="city"> City Meetups
+            <label for="wiki" class="list-checkbox"></label>
+              <input value="wiki" type="checkbox" name="option9" id="wiki"> Wiki
+            <label for="forum" class="list-checkbox"></label>
+              <input value="forum" type="checkbox" name="option10" id="forum"> Forum
+            <label for="courses" class="list-checkbox"></label>
+              <input value="courses" type="checkbox" name="option11" id="courses"> Additional Courses
+        </div>
+        <div>
+          <label for="text">Any comments or suggestions?</label>
+            <textarea name="textarea" id="text" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+  </div>
+  <footer>
+    <p id="copy">&copy; No Copyright - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
